@@ -7,7 +7,7 @@ class BostonWeatherScraper
     doc = Nokogiri::HTML(`curl -s #{url}`)
     n = doc.at('#homepageWeather')
     html = n.to_html
-    puts html
+    # puts html
     html
   end
 end
